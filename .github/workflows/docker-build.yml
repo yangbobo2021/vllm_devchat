@@ -25,10 +25,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: yangbobo046/vllm:latest
-
-    - name: Print Docker Hub login status
-      run: docker info | grep "Login Succeeded"
-
-    - name: Print Docker image
-      run: docker images | grep "yangbobo046/vllm"
+        tags: yangbobo046/fastchat:latest
